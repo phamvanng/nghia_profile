@@ -5,15 +5,19 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: #f4f4f4;
+    
+    background-color: rgb(210, 216, 235);
 }
 h1 {
     text-align: center;
     color: #333;
     text-shadow: 1px 1px 1px #ccc;
+    padding-top: 30px;
 }
-p {
+#p1 {
     color: #666;
+ 
+    padding: 10px 12px;
 }
 .social-links {
     margin-top: 20px;
@@ -27,8 +31,13 @@ p {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-.social-links a:hover {
+.social-links a i {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.social-links a i:hover {
     color: #0056b3;
+    font-size: 31px;
 }
 footer {
     text-align: center;
@@ -41,4 +50,14 @@ footer a {
 }
 footer a:hover {
     color: #555;
+}
+#board {
+    background-position: center;
+    text-align: center;
+    background-color: rgb(210, 216, 235);
+    border-radius: 4%;
+    box-shadow: 5px 5px 5px 5px rgb(237, 238, 241);
+}
+main {
+    
 }
