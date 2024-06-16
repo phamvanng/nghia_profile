@@ -5,7 +5,6 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 0 20px;
-    
     background-color: rgb(210, 216, 235);
 }
 h1 {
@@ -19,25 +18,36 @@ h1 {
  
     padding: 10px 12px;
 }
+
 .social-links {
-    margin-top: 20px;
-    text-align: center;
-}
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 1.2em;
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.social-links a i {
-    font-size: 30px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 15px; /* Khoảng cách giữa các biểu tượng */
     padding-bottom: 15px;
 }
-.social-links a i:hover {
-    color: #0056b3;
-    font-size: 31px;
+
+.social-links a {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+    width: 55px; /* Chiều rộng cố định */
+    height: 55px; /* Chiều cao cố định */
+    background-color: #f0f0f0; /* Màu nền */
+    color: #007bff; /* Màu biểu tượng */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 50%; /* Làm cho biểu tượng thành hình tròn */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.social-links a i {
+    font-size: 24px; /* Kích thước biểu tượng */
+}
+
+.social-links a:hover {
+    background-color: #ccc;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
 }
 footer {
     text-align: center;
@@ -58,6 +68,9 @@ footer a:hover {
     border-radius: 4%;
     box-shadow: 5px 5px 5px 5px rgb(237, 238, 241);
 }
-main {
-    
+.more_in4 a::after{
+    content: attr("More information about me");
+}
+.more_in4 a:hover::after{
+    opacity: 1;
 }
